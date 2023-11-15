@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>battleship</title>
-    <script type="module" src="battleship.js"></script>
-    <script type="module" src="player.js"></script>
-    <script type="module" src="server.js"></script>
-    <script type="module" src="gameboard.js"></script>
+    <script type="module" src="battleship.mjs"></script>
+    <script type="module" src="player.mjs"></script>
+    <script type="module" src="gameboard.mjs"></script>
+    <script type="module" src="server.mjs"></script>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- 
-        
-        button for restarting a game
-    
-    -->
     <div id = "playergameboard" class="player gameboard"></div>
     <br>
     <br>
     <div id = "computergameboard" class="computer gameboard"></div>
-    <div id="gamestarter" onclick="gamestarter()"></div>
-    <div id="restartgame" onclick="restartgame()"></div>
+    <div id="gamestarter">gamestarter</div>
+    <div id="restartgame" onclick="restartgame()">gamerestarter</div>
 </body>
 </html>
 

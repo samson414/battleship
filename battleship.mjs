@@ -84,7 +84,8 @@ var Board = function () {
         if (this.board[coords].ship) {
             let shipname = this.board[coords].ship;
             shipname.hit();
-            this.hitlist.push({coords: coords, isHit: true})
+            const newLocal = this;
+            newLocal.hitlist.push({coords: coords, isHit: true})
         } 
         else {
             this.hitlist.push({coords: coords, isHit: false})

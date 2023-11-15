@@ -44,31 +44,3 @@ const AI = function (playerboard) {
 };
 
 export { Player, AI };
-
-const playerBoard = new Board();
-const computerBoard = new Board();
-
-const player = Player(computerBoard);
-const computer = AI(playerBoard);
-
-// Perform coordinate attack by the player
-
-const ship1 = new Battleship('ship1', 3);
-computerBoard.placeShips(3, 3, ship1)
-computerBoard.placeShips(4, 4, ship1)
-
-
-playerBoard.placeShips(3, 3, ship1)
-playerBoard.placeShips(4, 4, ship1)
-
-
-player.coordinateAttack(2, 3, computerBoard); // x=2, y=3
-
-// Perform random move by the AI
-console.log(computer.randommove())
-
-console.log(playerBoard.printboard())
-console.log(computerBoard.printboard())
-
-let hits = playerBoard.hitlistshow()
-console.log(hits[0]);
